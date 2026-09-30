@@ -1,0 +1,45 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <style>
+    .contact-card { width: 80%; margin: auto; margin-top: 5%; padding: 30px; }
+    .contact-row { display: flex; flex-direction: row; align-items: center; gap: 40px; }
+    .contact-info h2 { color: darkturquoise; margin-bottom: 20px; }
+    .contact-info p { font-size: larger; margin-bottom: 10px; }
+  </style>
+</head>
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" aria-current="page" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="card contact-card">
+    <div class="contact-row">
+      <img src="/static/contactus.png" alt="Contact us" style="width: 30%;">
+      <div class="contact-info">
+        <h2>Contact Customer Service</h2>
+        <p><b>Email:</b> support@bestcars.com</p>
+        <p><b>Phone:</b> +1 (416) 555-0198</p>
+        <p><b>Address:</b> 250 Front Street West, Toronto, ON, Canada</p>
+        <p><b>Hours:</b> Monday to Saturday, 9:00 AM - 7:00 PM</p>
+      </div>
+    </div>
+  </div>
+</div>
+</html>
