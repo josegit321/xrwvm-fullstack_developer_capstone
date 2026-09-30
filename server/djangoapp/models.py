@@ -16,7 +16,8 @@ class CarMake(models.Model):
 # Car model: one car make has many car models
 class CarModel(models.Model):
     car_make = models.ForeignKey(CarMake, on_delete=models.CASCADE)
-    dealer_id = models.IntegerField(default=0)  # Refers to a dealer in the Cloudant database
+    # Refers to a dealer in the Cloudant database
+    dealer_id = models.IntegerField(default=0)
     name = models.CharField(max_length=100)
     CAR_TYPES = [
         ('SEDAN', 'Sedan'),
